@@ -10,10 +10,7 @@ function App() {
                 <NavBar></NavBar>
                 <Header></Header>
                     <Layout>
-                        <p></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat adipisci ratione dolorum modi aspernatur incidunt delectus commodi! Non atque, aliquid ipsa perspiciatis, nemo eveniet quae a doloremque sunt corporis consequuntur?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat adipisci ratione dolorum modi aspernatur incidunt delectus commodi! Non atque, aliquid ipsa perspiciatis, nemo eveniet quae a doloremque sunt corporis consequuntur?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat adipisci ratione dolorum modi aspernatur incidunt delectus commodi! Non atque, aliquid ipsa perspiciatis, nemo eveniet quae a doloremque sunt corporis consequuntur?</p>
+
                     </Layout>
                 <Bloques />
             </div>

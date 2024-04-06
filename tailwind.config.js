@@ -10,9 +10,8 @@ export default {
     extend: {
       colors: {
         primary: "#252B31",
-        secondary: "#2C393F",
-        accent: "#2E4348",
-        button: "#2E4348",
+        secondary: "#DFD7CA",
+        accent: "#DD7A1D",
       },
     },
   },

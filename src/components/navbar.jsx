@@ -10,14 +10,17 @@ const NavBar = () => {
                         <span className="ml-3 text-xl">DecoWOOD</span>
                     </a>
                     <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                        <a className="block inline-block py-1 text-white hover:text-secondary cursor-point mr-4">First Link</a>
-                        <a className="mr-5 hover:text-white">Second Link</a>
-                        <a className="mr-5 hover:text-white">Third Link</a>
-                        <a className="mr-5 hover:text-white">Fourth Link</a>
+                        <a className="block inline-block py-1 text-white hover:text-accent cursor-point mr-4">Inicio</a>
+                        <a className="block inline-block py-1 text-white hover:text-accent cursor-point mr-4">Galería</a>
+                        <select className="block inline-block py-1 text-white hover:text-accent cursor-point mr-4">
+                            <a>Productos</a>
+                            <a>Detalles</a>
+                        </select>    
+                        <a className="block inline-block py-1 text-white hover:text-accent cursor-point mr-4">Contacto</a>    
                     </nav>
-                    <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+                    <button className="inline-flex items-center bg-accent border-0 py-3 px-5  hover:bg-secondary rounded text-primary mt-5 md:mt-0">Cotiza
                         <svg fill="none" stroke="currentColor" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            <path d="M3 12h14M12 5l7 7-7 7"></path>
                         </svg>
                     </button>
                 </div>
