@@ -1,4 +1,4 @@
-const Bloques = () => {
+const ProductCard = () => {
     return (
         <>
             <section class="text-gray-400 bg-gray-900 body-font mt-10" id="productCard">
@@ -13,22 +13,17 @@ const Bloques = () => {
                         </div>
                         <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
                             <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">Diseño y funcionalidad unidos en cada pieza</h1>
-                            <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Nos enorgullece ofrecer muebles que no solo son visualmente atractivos, sino también funcionales y diseñados para mejorar la vida diaria de nuestros clientes.</p>
+                            <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">En nuestra empresa, trabajamos para hacer realidad los sueños de nuestros clientes, proporcionando muebles que reflejen su estilo de vida y les brinden momentos inolvidables en casa.</p>
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                    <div class="flex flex-wrap sm:-m-4">
                         <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
                             <div class="rounded-lg h-64 overflow-hidden">
                                 <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503" />
                             </div>
                             <h2 class="text-xl font-medium title-font text-white mt-5">Shooting Stars</h2>
-                            <p class="text-base leading-relaxed mt-2">Swag shoindxgoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-                            <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
+                            <p class="text-base leading-relaxed mt-2">Swag shoindxgoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>                           
                         </div>
 
                         <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -37,11 +32,6 @@ const Bloques = () => {
                             </div>
                             <h2 class="text-xl font-medium title-font text-white mt-5">The Catalyzer</h2>
                             <p class="text-base leading-relaxed mt-2">Swag shoindxigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-                            <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
                         </div>
 
                         <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -50,17 +40,33 @@ const Bloques = () => {
                             </div>
                             <h2 class="text-xl font-medium title-font text-white mt-5">The 400 Blows</h2>
                             <p class="text-base leading-relaxed mt-2">Swag shoindegoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
-                            <a class="text-indigo-400 inline-flex items-center mt-3">Learn More
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
+                <div className="text-center">
+                    <button className="inline-flex items-center bg-accent border-0 py-3 px-5 hover:bg-secondary rounded text-primary mb-9">
+                        <strong>Visita nuestras redes</strong>
+                        <svg fill="none" stroke="currentColor" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                            <path d="M3 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                        <a
+                            href="https://www.instagram.com/deco.woodcol/?hl=es-la"
+                            className="btn btn-xl btn-light"
+                            target="_blank"
+                        >
+                            <img
+                            src="./img/instagram.png"
+                            alt="Instagram"
+                            width="50"
+                            height="50"
+                            />
+                        </a>
+                    </button>
+                </div>
+
             </section>
         </>
     )
 }
 
-export default Bloques
+export default ProductCard

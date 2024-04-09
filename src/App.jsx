@@ -1,21 +1,25 @@
-import Bloques from "./components/productCard"
+import React from 'react'
+
+import ProductCard from "./components/productCard"
 import Header from "./components/header"
 import Layout from "./components/layout"
 import NavBar from "./components/navbar"
+import Contact from './components/contact'
 
 function App() {
     return (
-        <>
-            <div className="bg-primary min-h-screen">
-                <NavBar />
-                <Header />
-                    <Layout>
+        <div className="bg-primary min-h-screen">
+            <NavBar />
+            <Header />
+                <Layout>
+                    
+                </Layout>
+            <ProductCard />
+            <Contact />
+        </div>
 
-                    </Layout>
-                <Bloques />
-            </div>
-        </>
     )
 }
 
 export default App
+
