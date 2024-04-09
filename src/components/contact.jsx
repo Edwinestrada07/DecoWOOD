@@ -1,22 +1,21 @@
-import React from 'react';
-
 const Contact = () => {
     return (
         <section className="text-gray-600 body-font relative" id="contact">
-            <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-                <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-                    <iframe title="map" className="absolute inset-0 w-full h-full" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.4)' }}></iframe>
-                    <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-                        <div className="lg:w-1/2 px-6">
-                            <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-                            <p className="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
-                        </div>
-                        <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                            <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                            <a href="mailto:example@email.com" className="text-indigo-500 leading-relaxed">example@email.com</a>
-                            <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                            <p className="leading-relaxed">123-456-7890</p>
-                        </div>
+            <div className="container py-5 mx-auto flex sm:flex-nowrap flex-wrap">
+                <div className=" bg-gray-300 p-4 flex items-end">
+                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d836.1393713066037!2d-75.6829202944816!3d4.526913928551698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f563dbb4cd9b%3A0xb6a1b32928339bf5!2sDecoWood!5e0!3m2!1ses-419!2sco!4v1712667713766!5m2!1ses-419!2sco" width="800" height="300" ></iframe>
+                </div>
+                <div className="bg-primary relative flexpy-6 rounded shadow-md">
+                    <div className="px-10">
+                        <h2 className="title-font font-semibold text-white tracking-widest">DIRECCIÓN:</h2>
+                        <p className="leading-relaxed font-semibold text-white">Deco<span className="text-tertiary">WOOD</span></p>
+                        <p className="text-white">Cra. 19 #35-19 local 6, Armenia, Quindío</p>
+                    </div>
+                    <div className="px-10">
+                    <h2 className="title-font font-semibold text-tertiary tracking-widest">CORREO ELECTRÓNICO</h2>
+                        <p className="text-white">decowoodcol@outlook.com</p>
+                        <h2 className="title-font font-semibold text-tertiary tracking-widest">TELÉFONO</h2>
+                        <p className="text-white">315-439-7144 / 315-601-0042</p>
                     </div>
                 </div>
             </div>
@@ -24,6 +23,6 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default Contact
 
 

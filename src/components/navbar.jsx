@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 function NavBar () {
     const [menuVisible, setMenuVisible] = useState(false)
@@ -65,21 +65,20 @@ function NavBar () {
                         <a className="inline-block py-1 text-white hover:text-accent cursor-point mr-5" href="#contact"><strong>Contacto</strong></a>    
                     </nav>
                     
-                    <button className="inline-flex items-center bg-accent border-0 py-3 px-5  hover:bg-secondary rounded text-primary mt-5 md:mt-0"><strong>Cotiza</strong>
+                    <button className="inline-flex items-center bg-accent border-0 py-3 px-5 hover:bg-secondary rounded text-white mt-5 md:mt-0"><strong>Cotiza</strong>
                         <svg fill="none" stroke="currentColor" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                             <path d="M3 12h14M12 5l7 7-7 7"></path>
                         </svg>
                         <a
                             href="https://api.whatsapp.com/send?phone=573154397144&text=Hola%2C%20estoy%20interesad%40%20en%20cotizar%20un%20producto"
-                            class="btn btn-xl btn-light"
+                            className="btn btn-xl btn-light"
                             target="_blank"
-                            onclick="redirigirWhatsApp()"
                           >
                             <img
                             src="./img/whatsapp.png"
                             alt="WhatsApp"
-                            width="50"
-                            height="50"
+                            width="40"
+                            height="40"
                           />
                         </a>
                     </button>
