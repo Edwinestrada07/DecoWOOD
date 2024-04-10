@@ -1,9 +1,7 @@
-
-
 const ProductCard = () => {
     return (
         <>
-            <section className="text-gray-400 bg-gray-900 body-font mt-10">
+            <section className="text-gray-400 bg-gray-900 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col">
                         <div className="h-1 bg-gray-800 rounded overflow-hidden">
