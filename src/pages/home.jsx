@@ -1,4 +1,4 @@
-const Header = () => {
+const Home = () => {
     return (
         <div className="flex justify-center h-full "> 
             <div className="flex justify-center p-6 "> 
@@ -28,4 +28,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Home
