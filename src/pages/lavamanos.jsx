@@ -17,31 +17,31 @@ const Lavamanos = () => {
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div className="flex w-full mb-20 flex-wrap">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font text-tertiary lg:w-1/3 lg:mb-0 mb-4">MUEBLES LAVAMANOS</h1>
-                        <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably heard of them man bun deep jianbing selfies heirloom.</p>
+                        <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Sumérgete en la belleza y funcionalidad con nuestros elegantes muebles de lavamanos, diseñados para transformar tu espacio de baño en un oasis de comodidad y estilo.</p>
                     </div>
                     
                     <div className="flex flex-wrap md:-m-2 -m-1">
                         <div className="flex flex-wrap w-1/2">
                             <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos1.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos1.jpeg")} />
+                                <img alt="lavamanos" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos1.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos1.jpeg")} />
                             </div>
                             <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos2.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos2.jpeg")} />
+                                <img alt="lavamanos" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos2.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos2.jpeg")} />
                             </div>
                             <div className="md:p-2 p-1 w-full">
-                                <img alt="gallery" className="w-full h-full object-cover object-center block rounded-lg" src="./img/lavamanos/lavamanos3.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos3.jpeg")} />
+                                <img alt="lavamanos" className="w-full h-full object-cover object-center block rounded-lg" src="./img/lavamanos/lavamanos3.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos3.jpeg")} />
                             </div>
                         </div>
 
                         <div className="flex flex-wrap w-1/2">
                             <div className="md:p-2 p-1 w-full">
-                                <img alt="gallery" className="w-full h-full object-cover object-center block rounded-lg" src="./img/lavamanos/lavamanos4.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos4.jpeg")} />
+                                <img alt="lavamanos" className="w-full h-full object-cover object-center block rounded-lg" src="./img/lavamanos/lavamanos4.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos4.jpeg")} />
                             </div>
                             <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos5.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos5.jpeg")} />
+                                <img alt="lavamanos" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos5.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos5.jpeg")} />
                             </div>
                             <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos7.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos7.jpeg")} />
+                                <img alt="lavamanos" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos7.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos7.jpeg")} />
                             </div>
                         </div> 
                         

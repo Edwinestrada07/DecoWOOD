@@ -20,26 +20,26 @@ const ProductCard = () => {
                     <div className="flex flex-wrap sm:-m-4">
                         <div className="p-4 md:w-1/3 sm:mb-0 mb-6 hover:transform hover:translate-y-1 transition-transform duration-300">
                             <div className="rounded-lg h-64 overflow-hidden">
-                                <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503" />
+                                <img alt="content" className="object-cover object-center h-full w-full" src="./img/mueble15.jpeg" />
                             </div>
-                            <h2 className="text-xl font-medium title-font text-white mt-5">Shooting Stars</h2>
-                            <p className="text-base leading-relaxed mt-2">Swag shoindxgoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>                           
+                            {/* <h2 className="text-xl font-medium title-font text-white mt-5">Shooting Stars</h2> */}
+                            <p className="text-base leading-relaxed mt-2">Transformando hogares con estilo y funcionalidad. Descubre nuestras exclusivas colecciones de muebles y soluciones de diseño que convierten cada espacio en un verdadero reflejo de tu personalidad y comodidad.</p>                           
                         </div>
 
                         <div className="p-4 md:w-1/3 sm:mb-0 mb-6 hover:transform hover:translate-y-1 transition-transform duration-300">
                             <div className="rounded-lg h-64 overflow-hidden">
-                                <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503" />
+                                <img alt="content" className="object-cover object-center h-full w-full" src="./img/cocina10.jpeg" />
                             </div>
-                            <h2 className="text-xl font-medium title-font text-white mt-5">The Catalyzer</h2>
-                            <p className="text-base leading-relaxed mt-2">Swag shoindxigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+                            {/* <h2 className="text-xl font-medium title-font text-white mt-5">The Catalyzer</h2> */}
+                            <p className="text-base leading-relaxed mt-2">Innovación, calidad y belleza se unen en cada uno de nuestros productos. Desde cocinas hasta muebles de lavandería, nuestra empresa ofrece soluciones integrales para el hogar, diseñadas para satisfacer las necesidades más exigentes con un toque de elegancia incomparable.</p>
                         </div>
 
                         <div className="p-4 md:w-1/3 sm:mb-0 mb-6 hover:transform hover:translate-y-1 transition-transform duration-300">
                             <div className="rounded-lg h-64 overflow-hidden">
-                                <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503" />
+                                <img alt="content" className="object-cover object-center h-full w-full" src="./img/mueble4.jpeg" />
                             </div>
-                            <h2 className="text-xl font-medium title-font text-white mt-5">The 400 Blows</h2>
-                            <p className="text-base leading-relaxed mt-2">Swag shoindegoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+                            {/* <h2 className="text-xl font-medium title-font text-white mt-5">The 400 Blows</h2> */}
+                            <p className="text-base leading-relaxed mt-2">Creando ambientes excepcionales para vivir y disfrutar. Con una amplia gama de muebles y accesorios para cada rincón del hogar, nuestra empresa se destaca por ofrecer diseño innovador, materiales de primera calidad y atención al detalle en cada pieza.</p>
                         </div>
                     </div>
                 </div>

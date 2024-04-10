@@ -17,7 +17,7 @@ const Cocina = () => {
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div className="flex w-full mb-20 flex-wrap">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font text-tertiary lg:w-1/3 lg:mb-0 mb-4">COCINAS</h1>
-                        <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably heard of them man bun deep jianbing selfies heirloom.</p>
+                        <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Transformando espacios en hogares encantadores con nuestras exquisitas cocinas, donde el diseño se fusiona con la funcionalidad para crear experiencias culinarias inolvidables.</p>
                     </div>
 
                     <div className="flex flex-wrap md:-m-2 -m-1">
