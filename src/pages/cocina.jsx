@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import Contact from "../components/contact"
-import Footer from "../components/footer"
-import NavBar from "../components/navbar"
+import { useState } from 'react'
+import Contact from '../components/contact'
+import Footer from '../components/footer'
+import NavBar from '../components/navbar'
 
 const Cocina = () => {
-    const [expandedImage, setExpandedImage] = useState(null);
+    const [expandedImage, setExpandedImage] = useState(null)
 
     const handleImageClick = (imageUrl) => {
-        setExpandedImage(imageUrl);
+        setExpandedImage(imageUrl)
     }
 
     return (
@@ -126,6 +126,7 @@ const Cocina = () => {
                     </button>
                 </div>
             </section>
+            
             {expandedImage && (
                 <div className="fixed top-0 left-0 z-50 w-full h-full bg-black bg-opacity-80 flex justify-center items-center" onClick={() => setExpandedImage(null)}>
                     <img src={expandedImage} alt="expanded" className="max-w-full max-h-full" />

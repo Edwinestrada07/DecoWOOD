@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 function NavBar() {
-    const [menuVisible, setMenuVisible] = useState(false);
+    const [menuVisible, setMenuVisible] = useState(false)
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -10,32 +10,34 @@ function NavBar() {
             if (!event.target.closest('.menu-container')) {
                 // Si el menú está visible, lo oculta
                 if (menuVisible) {
-                    setMenuVisible(false);
+                    setMenuVisible(false)
                 }
             }
         }
 
         // Agrega un event listener para el clic fuera del menú
-        document.addEventListener('click', handleClickOutside);
+        document.addEventListener('click', handleClickOutside)
 
         // Remueve el event listener cuando el componente se desmonta
         return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, [menuVisible]);
+            document.removeEventListener('click', handleClickOutside)
+        }
+    }, [menuVisible])
 
     const toggleMenu = () => {
         // Cambia el estado de visibilidad del menú
-        setMenuVisible(!menuVisible);
-    };
+        setMenuVisible(!menuVisible)
+    }
 
     return (
         <header className="bg-gray-900">
+
             <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
                     <img src="./img/logo.png" className="h-10 w-10" alt="" />
                     <span className="ml-3 text-xl">DecoWOOD</span>
                 </Link>
+
                 <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                     <Link to="/" className="inline-block py-1 text-white hover:text-accent cursor-point mr-5"><strong>Inicio</strong></Link>
                     <div className="relative inline-block text-left menu-container">
@@ -65,7 +67,6 @@ function NavBar() {
                     <a className="inline-block py-1 text-white hover:text-accent cursor-point mr-5" href="#contacto"><strong>Contacto</strong></a>
                 </nav>
 
-
                 <button className="inline-flex items-center bg-accent border-0 py-3 px-5 hover:bg-secondary rounded text-white mt-5 md:mt-0"><strong>Realiza Cotización</strong>
                     <svg fill="none" stroke="currentColor" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                         <path d="M3 12h14M12 5l7 7-7 7"></path>
@@ -83,9 +84,10 @@ function NavBar() {
                         />
                     </a>
                 </button>
+
             </div>
         </header>
-    );
+    )
 }
 
-export default NavBar;
+export default NavBar

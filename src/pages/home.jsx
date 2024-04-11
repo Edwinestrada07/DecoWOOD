@@ -1,5 +1,6 @@
 const Home = () => {
     return (
+        
         <div className="bg-primary flex justify-center"> 
             <div className="flex justify-center p-6 "> 
                 <div className="flex flex-col justify-center"> 
