@@ -20,88 +20,24 @@ const Cocina = () => {
                         <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Transformando espacios en hogares encantadores con nuestras exquisitas cocinas, donde el diseño se fusiona con la funcionalidad para crear experiencias culinarias inolvidables.</p>
                     </div>
 
-                    <div className="flex flex-wrap md:-m-2 -m-1">
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina1.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina1.jpeg")} />
+                    <div className="bg-gray-700 p-10 rounded-2xl shadow-xl">
+                        <div className="grid grid-cols-6 gap-5">
+                            {Array.from({ length: 21 }).map((_, idx) => (
+                            <div
+                                key={idx}
+                                className={`relative ${
+                                idx % 1 === 0 ? "col-span-2 row-span-2" : ""
+                                } rounded-xl overflow-hidden cursor-pointer bg-white shadow-xl`}
+                                onClick={() => handleImageClick(`./img/cocinas/cocina${idx + 1}.jpeg`)}
+                            >
+                                <img
+                                src={`./img/cocinas/cocina${idx + 1}.jpeg`}
+                                alt={`closet ${idx + 1}`}
+                                className="object-cover w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
+                                />
                             </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina2.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina2.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-full">
-                                <img alt="cocina" className="w-full h-full object-cover object-center block rounded-lg" src="./img/cocinas/cocina3.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina3.jpeg")} />
-                            </div>
+                            ))}
                         </div>
-
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-full">
-                                <img alt="cocina" className="w-full h-full object-cover object-center block rounded-lg" src="./img/cocinas/cocina4.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina4.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina5.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina5.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina6.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina6.jpeg")} />
-                            </div>
-                        </div>
-
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina7.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina7.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina8.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina8.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina9.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina9.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina10.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina10.jpeg")} />
-                            </div>
-                        </div>
-
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-full">
-                                <img alt="cocina" className="w-full h-full object-cover object-center block rounded-lg" src="./img/cocinas/cocina11.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina11.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina12.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina12.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina13.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina13.jpeg")} />
-                            </div>
-                        </div>
-
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina14.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina14.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina15.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina15.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina16.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina16.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina22.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina22.jpeg")} />
-                            </div>
-                        </div>
-
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina18.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina18.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina19.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina19.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina20.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina20.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="cocina" className="w-full object-cover h-full object-center block rounded-lg" src="./img/cocinas/cocina21.jpeg" onClick={() => handleImageClick("./img/cocinas/cocina21.jpeg")} />
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
                 

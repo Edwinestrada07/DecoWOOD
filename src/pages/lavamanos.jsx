@@ -20,31 +20,24 @@ const Lavamanos = () => {
                         <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Sumérgete en la belleza y funcionalidad con nuestros elegantes muebles de lavamanos, diseñados para transformar tu espacio de baño en un oasis de comodidad y estilo.</p>
                     </div>
                     
-                    <div className="flex flex-wrap md:-m-2 -m-1">
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="lavamanos" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos1.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos1.jpeg")} />
+                    <div className="bg-gray-700 p-10 rounded-2xl shadow-xl">
+                        <div className="grid grid-cols-6 gap-5">
+                            {Array.from({ length: 6 }).map((_, idx) => (
+                            <div
+                                key={idx}
+                                className={`relative ${
+                                idx % 1 === 0 ? "col-span-2 row-span-2" : ""
+                                } rounded-xl overflow-hidden cursor-pointer bg-white shadow-xl`}
+                                onClick={() => handleImageClick(`./img/lavamanos/lavamanos${idx + 1}.jpeg`)}
+                            >
+                                <img
+                                src={`./img/lavamanos/lavamanos${idx + 1}.jpeg`}
+                                alt={`closet ${idx + 1}`}
+                                className="object-cover w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
+                                />
                             </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="lavamanos" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos2.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos2.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-full">
-                                <img alt="lavamanos" className="w-full h-full object-cover object-center block rounded-lg" src="./img/lavamanos/lavamanos3.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos3.jpeg")} />
-                            </div>
+                            ))}
                         </div>
-
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-full">
-                                <img alt="lavamanos" className="w-full h-full object-cover object-center block rounded-lg" src="./img/lavamanos/lavamanos4.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos4.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="lavamanos" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos5.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos5.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="lavamanos" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavamanos/lavamanos7.jpeg" onClick={() => handleImageClick("./img/lavamanos/lavamanos7.jpeg")} />
-                            </div>
-                        </div> 
-                        
                     </div>
                 </div>
                 

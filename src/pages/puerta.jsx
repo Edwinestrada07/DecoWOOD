@@ -20,58 +20,24 @@ const Puerta = () => {
                         <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Abre las puertas a un mundo de elegancia y funcionalidad con nuestras exclusivas soluciones en puertas, diseñadas para embellecer y proteger tus espacios con estilo y calidad incomparables.</p>
                     </div>
                     
-                    <div className="flex flex-wrap md:-m-2 -m-1">
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/puertas/puerta1.jpeg" onClick={() => handleImageClick("./img/puertas/puerta1.jpeg")} />
+                    <div className="bg-gray-700 p-10 rounded-2xl shadow-xl">
+                        <div className="grid grid-cols-6 gap-5">
+                            {Array.from({ length: 13 }).map((_, idx) => (
+                            <div
+                                key={idx}
+                                className={`relative ${
+                                idx % 1 === 0 ? "col-span-2 row-span-2" : ""
+                                } rounded-xl overflow-hidden cursor-pointer bg-white shadow-xl`}
+                                onClick={() => handleImageClick(`./img/puertas/puerta${idx + 1}.jpeg`)}
+                            >
+                                <img
+                                src={`./img/puertas/puerta${idx + 1}.jpeg`}
+                                alt={`closet ${idx + 1}`}
+                                className="object-cover w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
+                                />
                             </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/puertas/puerta2.jpeg" onClick={() => handleImageClick("./img/puertas/puerta2.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-full">
-                                <img alt="gallery" className="w-full h-full object-cover object-center block rounded-lg" src="./img/puertas/puerta3.jpeg" onClick={() => handleImageClick("./img/puertas/puerta3.jpeg")} />
-                            </div>
+                            ))}
                         </div>
-
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-full">
-                                <img alt="gallery" className="w-full h-full object-cover object-center block rounded-lg" src="./img/puertas/puerta6.jpeg" onClick={() => handleImageClick("./img/puertas/puerta6.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/puertas/puerta5.jpeg" onClick={() => handleImageClick("./img/puertas/puerta5.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/puertas/puerta4.jpeg" onClick={() => handleImageClick("./img/puertas/puerta4.jpeg")} />
-                            </div>
-                        </div>
-
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/puertas/puerta7.jpeg" onClick={() => handleImageClick("./img/puertas/puerta7.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/puertas/puerta8.jpeg" onClick={() => handleImageClick("./img/puertas/puerta8.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/puertas/puerta9.jpeg" onClick={() => handleImageClick("./img/puertas/puerta9.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/puertas/puerta10.jpeg" onClick={() => handleImageClick("./img/puertas/puerta10.jpeg")} />
-                            </div>
-                        </div>
-
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-full">
-                                <img alt="gallery" className="w-full h-full object-cover object-center block rounded-lg" src="./img/puertas/puerta11.jpeg" onClick={() => handleImageClick("./img/puertas/puerta11.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/puertas/puerta12.jpeg" onClick={() => handleImageClick("./img/puertas/puerta12.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="./img/puertas/puerta13.jpeg" onClick={() => handleImageClick("./img/puertas/puerta13.jpeg")} />
-                            </div>
-                        </div>
- 
                     </div>
                 </div>
                 

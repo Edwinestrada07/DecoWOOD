@@ -20,31 +20,24 @@ const Lavadero = () => {
                         <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Facilitando la vida cotidiana con nuestros prácticos y duraderos muebles de lavadero, diseñados para hacer que la tarea del lavado sea más eficiente y placentera.</p>
                     </div>
                
-                    <div className="flex flex-wrap md:-m-2 -m-1">
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="lavadero" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavadero/lavadero1.jpg" onClick={() => handleImageClick("./img/lavadero/lavadero1.jpg")} />
+                    <div className="bg-gray-700 p-10 rounded-2xl shadow-xl">
+                        <div className="grid grid-cols-6 gap-5">
+                            {Array.from({ length: 3 }).map((_, idx) => (
+                            <div
+                                key={idx}
+                                className={`relative ${
+                                idx % 1 === 0 ? "col-span-2 row-span-2" : ""
+                                } rounded-xl overflow-hidden cursor-pointer bg-white shadow-xl`}
+                                onClick={() => handleImageClick(`./img/lavaderos/lavadero${idx + 1}.jpeg`)}
+                            >
+                                <img
+                                src={`./img/lavaderos/lavadero${idx + 1}.jpeg`}
+                                alt={`closet ${idx + 1}`}
+                                className="object-cover w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
+                                />
                             </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="lavadero" className="w-full object-cover h-full object-center block rounded-lg" src="./img/lavadero/lavadero2.jpeg" onClick={() => handleImageClick("./img/lavadero/lavadero2.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-full">
-                                <img alt="lavadero" className="w-full h-full object-cover object-center block rounded-lg" src="https://dummyimage.com/600x360" onClick={() => handleImageClick("https://dummyimage.com/600x360")} />
-                            </div>
+                            ))}
                         </div>
-
-                        <div className="flex flex-wrap w-1/2">
-                            <div className="md:p-2 p-1 w-full">
-                                <img alt="lavadero" className="w-full h-full object-cover object-center block rounded-lg" src="./img/lavadero/lavadero3.jpeg" onClick={() => handleImageClick("./img/lavadero/lavadero3.jpeg")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="lavadero" className="w-full object-cover h-full object-center block rounded-lg" src="https://dummyimage.com/502x302" onClick={() => handleImageClick("https://dummyimage.com/502x302")} />
-                            </div>
-                            <div className="md:p-2 p-1 w-1/2">
-                                <img alt="lavadero" className="w-full object-cover h-full object-center block rounded-lg" src="https://dummyimage.com/503x303" onClick={() => handleImageClick("https://dummyimage.com/503x303")} />
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
                 
