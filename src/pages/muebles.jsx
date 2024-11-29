@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
 import NavBar from '../components/navbar'
+import InstagramButton from '../components/instagramButton'
 
 const Mueble = () => {
     const [expandedImage, setExpandedImage] = useState(null);
@@ -16,18 +17,18 @@ const Mueble = () => {
             <section className="text-gray-400 bg-gray-900 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div className="flex w-full mb-20 flex-wrap">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-tertiary lg:w-1/3 lg:mb-0 mb-4">MUEBLES<br></br> (Varias opciones para el hogar)</h1>
-                        <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Transforma cada rincón de tu hogar en un espacio funcional y acogedor con nuestra versátil colección de muebles para diferentes áreas, diseñados para satisfacer tus necesidades y reflejar tu estilo único.</p>
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-tertiary lg:w-1/3 lg:mb-0 mb-4">MUEBLES<br></br> (Multi-usos)</h1>
+                        <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg">Transforma cada rincón de tu hogar en un espacio funcional y acogedor con nuestra versátil colección de muebles para diferentes áreas, diseñados para satisfacer tus necesidades y reflejar tu estilo único.</p>
                     </div>
                     
-                    <div className="bg-gray-700 p-10 rounded-2xl shadow-xl">
+                    <div className="bg-gray-700 p-5 rounded-2xl shadow-xl">
                         <div className="grid grid-cols-6 gap-5">
-                            {Array.from({ length: 22 }).map((_, idx) => (
+                            {Array.from({ length: 21 }).map((_, idx) => (
                             <div
                                 key={idx}
                                 className={`relative ${
                                 idx % 1 === 0 ? "col-span-2 row-span-2" : ""
-                                } rounded-xl overflow-hidden cursor-pointer bg-white shadow-xl`}
+                                } rounded-3xl overflow-hidden cursor-pointer`}
                                 onClick={() => handleImageClick(`./img/muebles/mueble${idx + 1}.jpeg`)}
                             >
                                 <img
@@ -40,27 +41,7 @@ const Mueble = () => {
                         </div>
                     </div>
                 </div>
-                
-                <div className="text-center">
-                    <button className="inline-flex items-center bg-accent border-0 py-3 px-5 hover:bg-secondary rounded text-white mb-9">
-                        <strong>Visita nuestras redes</strong>
-                        <svg fill="none" stroke="currentColor" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                            <path d="M3 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                        <a
-                            href="https://www.instagram.com/deco.woodcol/?hl=es-la"
-                            className="btn btn-xl btn-light"
-                            target="_blank"
-                        >
-                            <img
-                            src="./img/instagram.png"
-                            alt="Instagram"
-                            width="50"
-                            height="50"
-                            />
-                        </a>
-                    </button>
-                </div>
+                <InstagramButton />
             </section>
 
             {expandedImage && (
