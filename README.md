@@ -1,8 +1,21 @@
-# React + Vite
+# DecoWOOD - Todo para su hogar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Diseño y funcionalidad unidos en cada pieza
+Nos enorgullece ofrecer muebles que no solo son visualmente atractivos, sino también funcionales y diseñados para mejorar la vida diaria de nuestros clientes.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Otorgarle al usuario una interfaz intuitiva y fácil de usar a la hora de cotizar y ordenar sus muebles para el hogar.
+
+## Vista de la interfaz
+
+![Interfaz de DecoWOOD](./public/img/readme/home.jpg)
+## Vista para la página de cocinas
+![Interfaz de DecoWOOD](./public/img/readme/cocina.jpg)
+## Elección de productos
+![Interfaz de DecoWOOD](./public/img/readme/lavamanos.jpg)
+## Ubicación 
+![Interfaz de DecoWOOD](./public/img/readme/ubicación.jpg)
+## Visitar sitio web 
+https://decowoodaxm.netlify.app/
+
