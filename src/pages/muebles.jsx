@@ -17,7 +17,7 @@ const Mueble = () => {
             <section className="text-gray-400 bg-gray-900 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div className="flex w-full mb-20 flex-wrap">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-tertiary lg:w-1/3 lg:mb-0 mb-4">MUEBLES<br></br> (Multi-usos)</h1>
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-tertiary lg:w-1/3 lg:mb-0 mb-4">MUEBLES (Multi-Usos)</h1>
                         <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg">Transforma cada rincón de tu hogar en un espacio funcional y acogedor con nuestra versátil colección de muebles para diferentes áreas, diseñados para satisfacer tus necesidades y reflejar tu estilo único.</p>
                     </div>
                     

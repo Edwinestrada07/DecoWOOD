@@ -17,7 +17,7 @@ const Closet = () => {
             <section className="text-gray-400 bg-gray-900 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div className="flex w-full mb-20 flex-wrap">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-tertiary lg:w-1/3 lg:mb-0 mb-4">CLOSET</h1>
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-tertiary lg:w-1/3 lg:mb-0 mb-4">CLOSET ALCOBAS</h1>
                         <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg">Convierte tus sueños en realidad y organiza tu vida con estilo, gracias a nuestros innovadores y funcionales closets diseñados para inspirar orden y elegancia en cada rincón de tu hogar.</p>
                     </div>
                  

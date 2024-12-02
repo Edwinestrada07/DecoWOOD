@@ -17,7 +17,7 @@ const Puerta = () => {
             <section className="text-gray-400 bg-gray-900 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div className="flex w-full mb-20 flex-wrap">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-tertiary lg:w-1/3 lg:mb-0 mb-4">PUERTAS</h1>
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-tertiary lg:w-1/3 lg:mb-0 mb-4">MARCO Y PUERTAS</h1>
                         <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg">Abre las puertas a un mundo de elegancia y funcionalidad con nuestras exclusivas soluciones en puertas, diseñadas para embellecer y proteger tus espacios con estilo y calidad incomparables.</p>
                     </div>
                     
